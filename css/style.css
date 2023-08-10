@@ -17,7 +17,8 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 80px;
+    width: 150px;
+    height: 170px;
     
     animation: pipe-animation 1.5s infinite linear;
 }
@@ -32,10 +33,76 @@
     animation: jump 500ms ease-out;
 }
 
+h1{
+    z-index: 1;
+    justify-content: center;
+    position: absolute;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+}
+
 .clouds {
     position: absolute;
     width: 550px;
     animation: clouds-animation 20s infinite linear;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao {
+    border: solid 2px black;
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.botao:hover {
+    animation: botao 1s infinite;
+    
+}
+
+.botao p{
+    text-align: center;
+    margin-top: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+footer p{
+    font-size: 20px;
+}
+
+@keyframes botao{
+    0% {
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes botao2{
+    0%{
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes pipe-animation{
