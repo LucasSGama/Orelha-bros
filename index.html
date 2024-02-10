@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/style.css">
-    
-
     <title>SUPER ORELHA BROS</title>
 </head>
 <body>
-
-        <div class="game-board">
+    <div class="game-board">
         <h1>SUPER ORELHA BROS</h1>
         <img src="images/clouds.png" alt="clounds" class="clouds">
-        <img src="images/RIchard-vivo-sem-fundo.png" alt="richard" id="mario" class="mario">
-        <img src="images/florindo-sem-fundo.png" alt="pipe" id="pipe" class="pipe">
-
+        <div class="personagens">
+            <img src="images/RIchard-vivo-sem-fundo.png" alt="richard" id="mario" class="mario">
+            <img src="images/florindo-sem-fundo.png" alt="pipe" id="pipe" class="pipe">
+        </div>
     </div>
 
     <footer>
-        <div class="lado-esquerdo">
-            <p id="highscore"></p>
-            <p id="score"></p>
+        <div class="principal-footer">
+            <div class="lado-esquerdo">
+                <p id="score">Score: <span>0</span></p>
+                <p id="highscore">Highscore: <span>0</span></p>
+            </div>
+            <div class="lado-direito">
+                <div class="botao" id="botao">
+                    <p onclick="RecarregarPagina()">Reiniciar</p>
+                </div>
+            </div>
         </div>
-
-        <div class="botao" id="botao">
-        <p onclick="RecarregarPagina()">Reiniciar</p>
-        </div>
-
         <br>
         <p>Jogo feito pelo @lucas_sgama e @vinicius_saless</p>
     </footer>
 
-</body>
-
     <script src="JS/script.js"></script>
+</body>
 </html>
